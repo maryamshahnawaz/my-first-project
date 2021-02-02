@@ -1,7 +1,4 @@
-h1 {
-  color: #21ecce;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -276,4 +273,25 @@ html {
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  height: 100vh;
+  background-color: red;
+}
+
+h1 {
+  font-family: "Barlow", sans-serif;
+  font-size: 13.8rem;
+  line-height: 12.6rem;
 }
