@@ -1,5 +1,5 @@
-// @mixin HeadingSize($fontFamily, $fontSize, $lineHeight) {
-//   font-family: $fontFamily;
-//   font-size: $fontSize;
-//   line-height: $lineHeights;
-// }
+@mixin headingSize($fontFamily, $fontSize, $lineHeight) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
