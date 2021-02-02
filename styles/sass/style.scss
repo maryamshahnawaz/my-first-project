@@ -9,7 +9,11 @@
   margin: 0;
   padding: 0;
 }
-
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
 body {
   font-size: 62.5%;
 }
@@ -28,9 +32,106 @@ header {
   background-image: url(../assets/header-image.jpg);
   background-position: center center;
   background-size: cover;
-  height: 100vh;
+  height: calc(100vh - 80px);
 }
 
 h1 {
-  @include headingSize($fontBarlow, 138px, 128px);
+  @include headingSize($fontBarlow, 138px, 126px);
+}
+
+h2 {
+  @include headingSize($fontBarlow, 80px, 92px);
+}
+
+h3 {
+  @include elementSize($fontBarlow, 42px, 1px);
+  margin-bottom: 20px;
+}
+
+h4 {
+  @include elementSize($fontBarlow, 32px, 1px);
+  margin-bottom: 20px;
+}
+
+nav {
+  @include headingSize($fontBarlow, 20px, 29px);
+  letter-spacing: 1px;
+}
+
+button {
+  @include headingSize($fontBarlow, 20px, 32px);
+  letter-spacing: 1px;
+  background-color: $accentColor;
+  padding: 10px 15px;
+  border: none;
+  margin-top: 30px;
+}
+
+body {
+  @include headingSize($fontLato, 20px, 32px);
+  color: white;
+}
+
+.header-box-image {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: -25%;
+}
+
+//Section 1 Styling
+.section-1 {
+  padding: 60px;
+  text-align: center;
+  background-color: $primaryColor;
+  height: 100vh;
+}
+
+.section-1 h3 {
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+//End Of Section 1 Styling
+
+//Start Of Section 2 Styling
+.section-2 {
+  background-color: $secondaryColor;
+  padding: 60px 0;
+}
+
+article {
+  display: flex;
+  padding: 100px 0;
+}
+
+.right-image,
+.left-image {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  background-color: $accentColor;
+}
+
+.right-image img {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+
+.left-image img {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+
+.right-side-content .left-side-content {
+  width: calc(50% - 40px);
+}
+
+.right-side-content {
+  margin-left: 40px;
+}
+
+.left-side-content {
+  margin-right: 40px;
 }
